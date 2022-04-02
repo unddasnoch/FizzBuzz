@@ -90,7 +90,8 @@ int main()
 
     std::cout << "(1) - Play FizzBuzz" << std::endl;
     std::cout << "(2) - Print FizzBuzz" << std::endl;
-    std::cout << "(3) - Exit" << std::endl;
+	std::cout << "(3) - options" << std::endl;
+    std::cout << "(4) - Exit" << std::endl;
 
     char input;
     std::cin >> input;
@@ -104,8 +105,11 @@ int main()
         printFizzBuzz();
         break;
     case '3':
-        exit(1);
+        std::cout << "opening options menu" << std::endl;
         break;
+	case '4':
+		exit(1);
+		break;
     default:
         break;
     }
